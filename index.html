@@ -49,36 +49,67 @@
 
     <header> 
       <div class="content-wrapper">
-        <div class="homepage">
-          <h1>Hi! My name is Tiffany Berger
-          </h1>
-          <h2>I’m a front end developer who enjoys turning design ideas into fully functional experiences. I'm currently looking for front-end developer opportunities where I can grow and build great user experiences.
-          </h2>
-        </div>
         <nav>
           <ul>
-            <li><a href="#">home</a></li>
+            <li><a href=#projects>projects</a></li> 
+            <li><a href=#skills>skills</a></li>                    
             <li><a href=#about>about</a></li>
-            <li><a href=#skills>skills</a></li>
-            <li><a href=#projects>projects</a></li>
-            <li><a href=#contact>contact</a></li>
+            <button><li><a href=#contact>contact</a></li></button>
           </ul>
         </nav> 
+        <section id="homepage">
+          <h1>Hi! My name is Tiffany Berger
+          </h1>
+          <h2>I am a web developer who enjoys turning design ideas into fully functional experiences. I'm currently looking for front-end developer opportunities where I can grow and build great user experiences.
+          </h2>
+        </section>
       </div>
     </header>
     <main>
-      <section id="about">
+      <section id="projects">
         <div class="content-wrapper">
-          <h2>A little about me</h2>
-          <img src="img/its-me.png" alt ="profile--picture">
-            <p>Front-end development feels like a puzzle and I love figuring things out, putting pieces together, and seeing the big picture come to life. It’s challenging, creative, and incredibly rewarding to build something unique from the ground up. My interest in development actually started back in the MySpace days.I loved customizing my page to reflect who I was. Now, I get to bring that same creativity and problem-solving into every project I build.
-            </p>
-            <P>When I'm not coding, I spend a lot of time with my family and three dogs. I taught myself how to crochet and create awesome stuff on my down time.</P>
-          </div>
+          <h2>Projects</h2>
+          <article>
+            <a href="https://cosmic-cocada-f0bf76.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="img/sticky-notes.png" alt="Sticky Notes"></a>
+            <h3>Super Sticky Notes</h3>
+              <p>Interactive app that will let users create “sticky notes” to keep track of to-do items with search ability</p>
+            <div class="skills-tools">
+              <p><strong>Skills used:</strong> ES6, JSX, Managing data flow, manipulate the dom</p>
+              <p><strong>Tools used:</strong> Code SandBox</p>
+            </div>  
+          </article>
+          <article>
+            <a href="https://tiff3b.github.io/Guess-the-word-game/" target="_blank" rel="noopener noreferrer"><img src="img/guess-the-word.png" alt="Guess the word"></a>
+            <h3>Guess the Word</h3>
+              <p>Guess the hidden word one letter at time before you run out of guesses</p>
+            <div class="skills-tools">
+              <p><strong>Skills used:</strong> Vanilla Javascript, manipulate the dom</p>
+              <p><strong>Tools used:</strong> GitHub</p>
+            </div>
+          </article>
+          <article>
+            <a href="https://tiff3b.github.io/github-repo-gallery/" target="_blank" rel="noopener noreferrer"><img src="img/repo-gallery.png" alt="Repo Gallery"></a>
+            <h3>GitHub Repo Gallery</h3>
+            <p>A gallery of all the repos I have on GitHub. Viewers can click on each repo to see more details</p>
+            <div class="skills-tools">
+              <p><strong>Skills used:</strong> APIs, manipulate the dom</p>
+              <p><strong>Tools used:</strong> GitHub</p>
+            </div>
+          </article>
+          <article>
+          <a href="https://tiff3b.github.io/unplugged/index.html" target="_blank" rel="noopener noreferrer"><img src="img/unplugged.png" alt="Unplugged"></a>
+            <h3>Unplugged</h3>
+            <p>A responsive 3-page website based on a design mockup, optimized for mobile, tablet, and desktop devices</p>
+            <div class="skills-tools">
+              <p><strong>Skills used:</strong> HTML, CSS-Media Queries, Flexbox, Responsive Typography</p>
+              <p><strong>Tools used:</strong> Visual Studio Code, GitHub</p>
+            </div>
+          </article>
+        </div>
       </section>
       <section id="skills">
-        <div class="content-wrapper">
-          <h2>Developer Skills</h2>
+        <h2>Developer Skills</h2>
+        <div class="content-wrapper">         
           <ul>
             <li>Javascript</li>
             <li>React</li>
@@ -90,8 +121,8 @@
             <li>CSS</li>
           </ul>
         </div>
+        <h2>Developer Tools</h2>
         <div class="content-wrapper">
-          <h2>Developer Tools</h2>
           <ul>
             <li>Vite</li>
             <li>Chrome Dev Tools</li>
@@ -100,56 +131,37 @@
             <li>Code Sandbox</li>
           </ul>
         </div>
-      </section>
-      <section id="projects">
+      </section>      
+      <section id="about">
         <div class="content-wrapper">
-          <h2>Projects</h2>
-          <article>
-            <h3>Super Sticky Notes</h3>
-            <p>Interactive app that will let users create “sticky notes” to keep track of to-do items with search ability</p>
-            <a href="https://cosmic-cocada-f0bf76.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="img/sticky-notes.png" alt="Sticky Notes"></a>
-            <h4>Tools used:</h4>
-            <p>Code SandBox</p>
-            <h4>Skills used:</h4>
-            <p>ES6, JSX, Managing data flow, manipulate the dom</p>
-          </article>
-          <article>
-            <h3>Guess the Word</h3>
-            <p>Guess the hidden word one letter at time before you run out of guesses</p>
-            <a href="https://tiff3b.github.io/Guess-the-word-game/" target="_blank" rel="noopener noreferrer"><img src="img/guess-the-word.png" alt="Guess the word"></a>
-            <h4>Tools used:</h4>
-            <p>GitHub</p>
-            <h4>Skills used:</h4>
-            <p>Vanilla Javascript, manipulate the dom</p>
-          </article>
-          <article>
-            <h3>GitHub Repo Gallery</h3>
-            <p>A gallery of all the repos I have on GitHub. Viewers can click on each repo to see more details</p>
-            <a href="https://tiff3b.github.io/github-repo-gallery/" target="_blank" rel="noopener noreferrer"><img src="img/repo-gallery.png" alt="Repo Gallery"></a>
-            <h4>Tools used:</h4>
-            <p>GitHub</p>
-            <h4>Skills used:</h4>
-            <p>APIs, manipulate the dom</p>            
-          </article>
-          <article>
-            <h3>Unplugged</h3>
-            <p>a responsive 3-page website based on a design mockup, optimized for mobile, tablet, and desktop devices</p>
-          <a href="https://tiff3b.github.io/unplugged/index.html" target="_blank" rel="noopener noreferrer"><img src="img/unplugged.png" alt="Unplugged"></a>
-          <h4>Tools used:</h4>
-          <p>Visual Studio Code, GitHub</p>
-          <h4>Skills used:</h4>
-          <p>HTML, CSS-Media Queries, Flexbox, Responsive Typography</p>
-          </article>
-        </div>
+          <h2>A little about me:</h2>
+          <img src="img/its-me.png" alt ="profile--picture">
+            <p>Front-end development feels like a puzzle and I love figuring things out, putting pieces together, and seeing the big picture come to life. It’s challenging, creative, and incredibly rewarding to build something unique from the ground up. My interest in development actually started back in the MySpace days.I loved customizing my page to reflect who I was. Now, I get to bring that same creativity and problem-solving into every project I build.
+            </p>
+            <P>When I'm not coding, I spend a lot of time with my family and three dogs. I taught myself how to crochet and create awesome stuff on my down time.</P>
+          </div>
       </section>
       <section id="contact">
         <div class="content-wrapper">
-          <h3>I can't wait to here from you!</h3>
-          <ul>
-            <li><a href="mailto:tiffany3berger@gmail.com" target="_blank"><img src="img/gmail-logo.png" alt="Gmail Icon"></a></li>
+          <h2>I can't wait to here from you!</h2>
+          <h3>Contact Info</h3>
+
+          <div class="contact-info">
+            <h4>Phone</h4>
+            <p>(906)-399-9481</p>
+            <h4>Email</h4>
+            <a href="mailto:tiffany3berger@gmail.com" target="_blank"><img src="img/gmail-logo.png" alt="Gmail Icon"></a></li>
+          </div>
+          <div class="social">
+            <h3>Follow Me</h3>
+            <ul>
             <li><a href="https://github.com/tiff3b" target="_blank"><img src="img/github-logo.png" alt="GitHub Icon"></a></li>
             <li><a href="https://www.linkedin.com/in/tiff-berger/" target="_blank"><img src ="img/linkedin-logo.png" alt="LinkedIn Icon"></a></li>
           </ul>
+        </div>
+        </div>
+        <div class="copyright">
+          <p>Copyright 2025</p>
         </div>
       </section>
     </main>

@@ -261,10 +261,13 @@ textarea {
   }
 }
 
+
+/********************GENERAL STYLES********************/
+
 html {
   font-size: 1rem;
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -273,22 +276,6 @@ body {
   color: black;
   margin: 0;
   padding: 0;
-}
-
-
-
-ul,li { 
-
-  font-size: 1.12em;
-  font-weight: bold;
-  margin: 0;
-  
-}
-
-a {
-  font-family: "Nunito Sans", sans-serif;
-  text-decoration: none;
-
 }
 
 h2{
@@ -318,7 +305,7 @@ img {
 
 
 .content-wrapper {
-  width: 100%;
+  width: 90%;
   margin: 0;
 
 } 
@@ -331,7 +318,31 @@ h1{
   margin: 0;
 }
 
-/**************HEADER-STYLES ***************/
+/**************HEADER STYLES***************/
+
+ul,li { 
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0; 
+}
+
+a {
+  color: #351d77;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+}
+
+button{
+  background-color: #ec91c4;
+  color: #351d77;
+  font-family: "Nunito Sans", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  height: 40px;
+  width: 95px;
+
+}
 
 *{
   margin:0;
@@ -339,8 +350,128 @@ h1{
   box-sizing: border-box;
 }
 
-header {
-  margin-top: 0;
-  background-color: #351D77;
+header{
+  margin: 0;
+  background-color: #eee4f0;
+  color: #351d77;
+  display: flex;
+  justify-content: center;
+}
 
+header .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+nav {
+  padding-top: 30px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+
+
+#homepage h1{
+  margin: 60px 0 30px 0;
+}
+
+#homepage h2{
+  padding-bottom: 30px;
+}
+
+/************************PROJECTS*******************/
+
+#projects {
+  padding-top: 50px;
+  background-color: #351d77;
+  color:#eee4f0;
+  display: flex;
+  justify-content: center;
+}
+
+#projects .content-wrapper, article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#projects a {
+  padding: 20px 0;
+}
+
+#projects h3 {
+  padding-bottom: 20px;
+}
+
+#projects p{
+  padding-bottom: 30px;
+}
+.skills-tools {
+  display: flex;
+  justify-content: left;
+  flex-flow: row wrap;
+}
+
+/*************SKILLS**************/
+
+#skills{
+  background-color: #eee4f0;
+  color: #351d77;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow: row wrap;
+  padding: 30px 0 40px 0;
+}
+#skills .content-wrapper{
+  display:flex;
+  align-items: center;
+}
+#skills ul li{
+  padding: 5px 0;
+  list-style: none;
+}
+
+/***************ABOUT**************/
+
+#about{
+  background-color: #ec91c4;
+  color: #351d77;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+#about h2{
+  padding-bottom: 30px;
+}
+#about p {
+  padding-top: 20px;
+}
+
+/***************CONTACT*************/
+
+#contact{
+  background-color: #eee4f0;
+  color: #351d77;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 40px 0 30px 0;
+}
+#contact .content-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
