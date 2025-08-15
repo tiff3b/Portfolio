@@ -119,8 +119,8 @@ h3,h4{
 
 p{
   font-family: "Nunito Sans", sans-serif;
-  font-size: .87em;
-  line-height: 18px;
+  font-size: 1em;
+  line-height: 25px;
 
 }
 
@@ -183,6 +183,7 @@ header{
   display: flex;
   justify-content: center;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 header .content-wrapper{
@@ -209,6 +210,7 @@ header nav ul{
 
 #homepage h1{
   margin: 60px 0 30px 0;
+  width: 65%;
 }
 
 #homepage h2{
@@ -241,17 +243,15 @@ header nav ul{
 }
 
 #projects h3 {
-  padding-bottom: 20px;
+  padding: 20px 0 40px 0;
   text-align: center;
 }
 
-#projects p{
-  padding-bottom: 30px;
-}
 .skills-tools {
   display: flex;
   justify-content: left;
   flex-flow: row wrap;
+  padding: 30px 0 40px 0;
 }
 
 /*************SKILLS**************/
@@ -263,14 +263,19 @@ header nav ul{
   justify-content: center;
   align-items:center;
   flex-flow: row wrap;
-  padding: 30px 0 40px 0;
+  padding: 20px 0 60px 0;
 }
-#skills .content-wrapper{
+.skills-used, .tools-used{
   display:flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#skills h2 {
+  padding: 40px 0 20px 0;
 }
 #skills ul li{
-  padding: 5px 0;
+  padding-bottom: 20px;
   list-style: none;
 }
 
@@ -282,13 +287,14 @@ header nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 80px 0 80px 0;
 }
 #about h2{
-  padding-bottom: 30px;
+  padding-bottom: 60px;
+  text-align: center;
 }
 #about p {
-  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 /***************CONTACT*************/
@@ -299,20 +305,16 @@ header nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  padding: 40px 0 30px 0;
+  flex-flow: column wrap;
+  padding: 60px 0 60px 0;
 }
-#contact .content-wrapper{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
+
 .contact-info, .social{
   display: flex;
   text-align: center;
   align-items: center;
   flex-direction: column;
-  flex-basis: 50%;
+  flex-basis: 100%;
     border-top: 3px solid #351d77;
 
 }
@@ -320,15 +322,21 @@ header nav ul{
   padding-bottom: 40px;
   text-align: center;
 }
+.contact-info, .social {
+  padding: 60px 0;
+}
 .contact-info h3, .social h3{
-  padding: 30px 0 15px;
+  padding-bottom: 10px;
+}
+.contact-info h4{
+  padding: 20px 0;
 }
 .contact-info p{
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .social ul li{
   list-style: none;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 .copyright{
   padding-top: 20px;
@@ -518,12 +526,27 @@ header nav ul{
 
 header {
   text-align: center;
+  padding-bottom: 80px;
 }
 
+header nav {
+  padding: 80px 0 80px 0;
+}
+#homepage h1 {
+  width: 100%;
+  padding-bottom: 50px;
+}
+#homepage h2 {
+  padding: 30px 0;
+}
+
+#projects h2{
+  padding: 60px 0 40px 0; 
+}
 .completed-projects{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: baseline;
   flex-flow: row wrap ;
 }
 .completed-projects article{
@@ -538,8 +561,61 @@ header {
   text-align: center;
   justify-content: space-around;
 }
-
+.skills-used ul, .tools-used ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: 75%;
+}
+.skills-tools h2, .tools-used h2 {
+  padding: 40px 0 20px 0;
+}
 #about h2{
   text-align: center;
 }
+.my-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+}
+
+/*****************DESKTOP STYLES******************/
+
+@media only screen and (min-width: 1200px){
+
+  .content-wrapper{
+    max-width: 960px;
+  }
+  header nav{
+    padding-top: 60px;
+  }
+  header nav ul{
+    display: flex;
+    justify-content: right;
+  }
+  header nav ul li{
+    padding: 0 15px 0 15px;
+  }
+  button {
+    width: 107px;
+  }
+  #homepage{
+    padding-bottom: 70px;
+  }
+  #projects h2{
+    padding: 40px 0;
+  }
+  #skills{
+    display: flex;
+    flex-direction: column;
+  }
+  #skills ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+  }
 }
