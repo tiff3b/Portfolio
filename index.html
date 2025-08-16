@@ -22,75 +22,83 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!-- Add your site or application content here -->
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" >
-  <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-      
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+
 </head>
 
-  <body>
-    <!-- WEBSITE CONTENT GOES HERE -->
+<body>
+  <!-- WEBSITE CONTENT GOES HERE -->
 
-    <header> 
+  <header>
+    <div class="content-wrapper">
+      <nav>
+        <ul>
+          <li><a href=#projects>projects</a></li>
+          <li><a href=#skills>skills</a></li>
+          <li><a href=#about>about</a></li>
+          <button title="Hire Me!">
+            <li><a href=#contact>contact</a></li>
+          </button>
+        </ul>
+      </nav>
+      <section id="homepage">
+        <h1>Hi! My name is Tiffany Berger
+        </h1>
+        <h2>I am a web developer who enjoys turning design ideas into fully functional experiences. I'm currently
+          looking for front-end developer opportunities where I can grow and build great user experiences.
+        </h2>
+      </section>
+    </div>
+  </header>
+  <main>
+    <section id="projects">
+
       <div class="content-wrapper">
-        <nav>
-          <ul>
-            <li><a href=#projects>projects</a></li> 
-            <li><a href=#skills>skills</a></li>                    
-            <li><a href=#about>about</a></li>
-            <button title="Hire Me!"><li><a href=#contact>contact</a></li></button>
-          </ul>
-        </nav> 
-        <section id="homepage">
-          <h1>Hi! My name is Tiffany Berger
-          </h1>
-          <h2>I am a web developer who enjoys turning design ideas into fully functional experiences. I'm currently looking for front-end developer opportunities where I can grow and build great user experiences.
-          </h2>
-        </section>
-      </div>
-    </header>
-    <main>
-      <section id="projects">
-              
-        <div class="content-wrapper">
-                  <h2>Projects</h2>  
+        <h2>Projects</h2>
         <div class="completed-projects">
           <article>
-            <a href="https://cosmic-cocada-f0bf76.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="img/sticky-note.png" alt="Sticky Notes"></a>
+            <a href="https://cosmic-cocada-f0bf76.netlify.app/" target="_blank" rel="noopener noreferrer"><img
+                src="img/sticky-note.png" alt="Sticky Notes"></a>
             <h3>Super Sticky Notes</h3>
-              <p>Interactive app that will let users create “sticky notes” to keep track of to-do items with search ability</p>
+            <p>Interactive app that will let users create “sticky notes” to keep track of to-do items with search
+              ability</p>
             <div class="skills-tools">
               <p><strong>Skills used:</strong> ES6, JSX, Managing data flow, manipulate the dom</p>
               <p><strong>Tools used:</strong> Code SandBox</p>
-            </div>  
+            </div>
           </article>
           <article>
-            <a href="https://tiff3b.github.io/Guess-the-word-game/" target="_blank" rel="noopener noreferrer"><img src="img/guess-the-word.png" alt="Guess the word"></a>
+            <a href="https://tiff3b.github.io/Guess-the-word-game/" target="_blank" rel="noopener noreferrer"><img
+                src="img/guess-the-word.png" alt="Guess the word"></a>
             <h3>Guess the Word</h3>
-              <p>Guess the hidden word one letter at a time. You only have eight incorrect guesses before the game ends</p>
+            <p>Guess the hidden word one letter at a time. You only have eight incorrect guesses before the game ends
+            </p>
             <div class="skills-tools">
               <p><strong>Skills used:</strong> Vanilla Javascript, manipulate the dom</p>
               <p><strong>Tools used:</strong> GitHub</p>
             </div>
           </article>
           <article>
-            <a href="https://tiff3b.github.io/github-repo-gallery/" target="_blank" rel="noopener noreferrer"><img src="img/repo-gallery.png" alt="Repo Gallery"></a>
+            <a href="https://tiff3b.github.io/github-repo-gallery/" target="_blank" rel="noopener noreferrer"><img
+                src="img/repo-gallery.png" alt="Repo Gallery"></a>
             <h3>GitHub Repo Gallery</h3>
             <p>A gallery of all the repos I have on GitHub. Viewers can click on each repo to see more details</p>
             <div class="skills-tools">
@@ -99,21 +107,23 @@
             </div>
           </article>
           <article>
-          <a href="https://tiff3b.github.io/unplugged/index.html" target="_blank" rel="noopener noreferrer"><img src="img/unplugged.png" alt="Unplugged"></a>
+            <a href="https://tiff3b.github.io/unplugged/index.html" target="_blank" rel="noopener noreferrer"><img
+                src="img/unplugged.png" alt="Unplugged"></a>
             <h3>Unplugged</h3>
-            <p>A responsive 3-page website based on a design mockup, optimized for mobile, tablet, and desktop devices</p>
+            <p>A responsive 3-page website based on a design mockup, optimized for mobile, tablet, and desktop devices
+            </p>
             <div class="skills-tools">
               <p><strong>Skills used:</strong> HTML, CSS-Media Queries, Flexbox, Responsive Typography</p>
               <p><strong>Tools used:</strong> Visual Studio Code, GitHub</p>
             </div>
           </article>
         </div>
-        </div>
-      </section>
-      <section id="skills">
-        <h2>Developer Skills</h2>
-        <div class="content-wrapper">  
-          <div class="skills-used">       
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Developer Skills</h2>
+      <div class="content-wrapper">
+        <div class="skills-used">
           <ul>
             <li>Javascript</li>
             <li>React</li>
@@ -124,11 +134,11 @@
             <li>HTML</li>
             <li>CSS</li>
           </ul>
-          </div>
         </div>
-        <h2>Developer Tools</h2>
-        <div class="content-wrapper">
-          <div class="tools-used">
+      </div>
+      <h2>Developer Tools</h2>
+      <div class="content-wrapper">
+        <div class="tools-used">
           <ul>
             <li>Vite</li>
             <li>Chrome Dev Tools</li>
@@ -136,45 +146,61 @@
             <li>Visual Studio Code</li>
             <li>Code Sandbox</li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="content-wrapper">
+
+        <div class="my-about">
+          <div class="all-about-me">
+            <h2>A little about me:</h2>
+            <p>Front-end development feels like a puzzle and I love figuring things out, putting pieces together, and
+              seeing the big picture come to life. It’s challenging, creative, and incredibly rewarding to build
+              something unique from the ground up. My interest in development actually started back in the MySpace
+              days.I loved customizing my page to reflect who I was. Now, I get to bring that same creativity and
+              problem-solving into every project I build.
+            </p>
+            <P>When I'm not coding, I spend a lot of time with my family and three dogs. I taught myself how to crochet
+              and create awesome stuff on my down time.</P>
+          </div>
+          <div class="my-photo">
+            <img src="img/its-me.png" alt="profile--picture">
           </div>
         </div>
-      </section>      
-      <section id="about">
-        <div class="content-wrapper">
-          <h2>A little about me:</h2>
-            <p>Front-end development feels like a puzzle and I love figuring things out, putting pieces together, and seeing the big picture come to life. It’s challenging, creative, and incredibly rewarding to build something unique from the ground up. My interest in development actually started back in the MySpace days.I loved customizing my page to reflect who I was. Now, I get to bring that same creativity and problem-solving into every project I build.
-            </p>
-            <P>When I'm not coding, I spend a lot of time with my family and three dogs. I taught myself how to crochet and create awesome stuff on my down time.</P>
-            <img src="img/its-me.png" alt ="profile--picture">
+      </div>
+    </section>
+    <section id="contact">
+      <div class="content-wrapper">
+        <h2>I can't wait to here from you!</h2>
+        <div class="contact-info">
+          <div class="my-info">
+            <h3><strong>Contact Me</strong></h3>
+            <div class="personal-contact">
+              <adress>(906)-399-9481</adress>
+
+              <adress>tiffany3berger@gmail.com</adress>
+            </div>
           </div>
-      </section>
-      <section id="contact">
-        <div class="content-wrapper">
-          <h2>I can't wait to here from you!</h2>
-            <div class="my-info">
-              <div class="contact-info">
-                <h3><strong>Contact Me</strong></h3>
-                  <div class="phone-email">
-                    <h4>Phone</h4>
-                    <p>(906)-399-9481</p>
-                    <h4>Email</h4>
-                    <a href="mailto:tiffany3berger@gmail.com" target="_blank"><img src="img/gmail-logo.png" alt="Gmail Icon"></a></li>
-                  </div>
-              </div>
-            <div class="social">
-              <h3><strong>Follow Me</strong> </h3>
+          <div class="social">
+
+            <h3><strong>Follow Me</strong> </h3>
+            <div class="social-icons">
               <ul>
-              <li><a href="https://github.com/tiff3b" target="_blank"><img src="img/github-logo.png" alt="GitHub Icon"></a></li>
-              <li><a href="https://www.linkedin.com/in/tiff-berger/" target="_blank"><img src ="img/linkedin-logo.png" alt="LinkedIn Icon"></a></li>
+                <li><a href="https://github.com/tiff3b" target="_blank"><img src="img/github-logo.png"
+                      alt="GitHub Icon"></a></li>
+                <li><a href="https://www.linkedin.com/in/tiff-berger/" target="_blank"><img src="img/linkedin-logo.png"
+                      alt="LinkedIn Icon"></a></li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="copyright">
-          <p>Copyright 2025 | Tiffany Berger</p>
-        </div>
-      </section>
-    </main>
-  </body>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2025 | Tiffany Berger</p>
+      </div>
+    </section>
+  </main>
+</body>
 
 </html>

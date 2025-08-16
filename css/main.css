@@ -309,7 +309,7 @@ header nav ul{
   padding: 60px 0 60px 0;
 }
 
-.contact-info, .social{
+.my-info, .social{
   display: flex;
   text-align: center;
   align-items: center;
@@ -322,7 +322,7 @@ header nav ul{
   padding-bottom: 40px;
   text-align: center;
 }
-.contact-info, .social {
+.my-info, .social {
   padding: 60px 0;
 }
 .contact-info h3, .social h3{
@@ -574,10 +574,27 @@ header nav {
 #about h2{
   text-align: center;
 }
-.my-info {
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+  }
+
+.social-icons ul li{
+  padding-top: 40px;
+}
+.personal-contact{
+  display: flex;
+  flex-flow: column;
+  padding-top: 45px;
+}
+.social-icons ul{
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  padding-left: 35px;
+}
+.social-icons ul li{
+  padding-right: 35px;
 }
 }
 
@@ -604,8 +621,14 @@ header nav {
   #homepage{
     padding-bottom: 70px;
   }
+  #homepage h1{
+    margin: 0;
+  }
   #projects h2{
     padding: 40px 0;
+  }
+  .completed-projects article{
+    flex-basis: 26%;
   }
   #skills{
     display: flex;
@@ -615,7 +638,24 @@ header nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-  
+    justify-content: space-around;  
   }
+.skills-used, .tools-used{
+  width: 100%;
+}
+.my-about{
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row-reverse;
+}
+.all-about-me{
+  width: 50%;
+  padding-left: 50px;
+}
+#about h2{
+  text-align: left;
+}
+.my-photo{
+  width: 50%;
+}
 }
