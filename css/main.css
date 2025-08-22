@@ -105,7 +105,7 @@ body {
 
 h2{
   font-family: "Alata", sans-serif;
-  font-size: 1.87em;
+  font-size: 1.99em;
   font-weight: 400;
 
 }
@@ -120,7 +120,7 @@ h3,h4{
 p{
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.25em;
-  line-height: 25px;
+  line-height: 30px;
 
 }
 
@@ -161,7 +161,7 @@ a {
 
 button{
   background-color: #ec91c4;
-  color: #351d77;
+  color:#351d77;
   font-family: "Nunito Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -179,13 +179,27 @@ button:hover{
 }
 
 header{
+  position: relative;
+  overflow: hidden;
   margin: 0;
-  background-color: #e8f0e4;
+  background-image: url("../img/mandala.bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center fixed;
   color: #351d77;
   display: flex;
   justify-content: center;
   text-align: center;
   padding-bottom: 50px;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5); /* light transparent overlay */
+  z-index: -1;
 }
 
 header .content-wrapper{
@@ -196,7 +210,7 @@ header .content-wrapper{
 }
 
 nav {
-  padding-top: 30px;
+  padding-top: 50px;
   text-transform: uppercase;
   width: 100%;
 }
@@ -222,7 +236,7 @@ header nav ul{
 /************************PROJECTS*******************/
 
 #projects {
-  padding-top: 25px;
+  padding: 40px 0;
   background-color: #351d77;
   color:#eee4f0;
   display: flex;
@@ -230,7 +244,7 @@ header nav ul{
 }
 #projects h2 {
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
 }
 
 .completed-projects {
@@ -245,7 +259,7 @@ header nav ul{
 }
 
 #projects h3 {
-  padding: 20px 0 40px 0;
+  padding: 40px 0 40px 0;
   text-align: center;
 }
 
@@ -265,7 +279,7 @@ header nav ul{
   justify-content: center;
   align-items:center;
   flex-flow: row wrap;
-  padding: 20px 0 60px 0;
+  padding: 20px 0 50px 0;
 }
 .skills-used, .tools-used{
   display:flex;
@@ -289,10 +303,10 @@ header nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 0 80px 0;
+  padding: 50px 0 50px 0;
 }
 #about h2{
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   text-align: center;
 }
 #about p {
@@ -308,7 +322,7 @@ header nav ul{
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  padding: 60px 0 60px 0;
+  padding: 50px 0 50px 0;
 }
 
 .my-info, .social{
@@ -321,7 +335,7 @@ header nav ul{
 
 }
 #contact h2{
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   text-align: center;
 }
 .my-info, .social {
