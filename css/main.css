@@ -112,7 +112,7 @@ h2{
 
 h3,h4{
   font-family: "Alata", sans-serif;
-  font-size: 1.12em;
+  font-size: 1.71em;
   font-weight: 500;
 
 }
@@ -272,14 +272,14 @@ header nav ul{
 
 /*************SKILLS**************/
 
-#skills{
+#skills, #tools{
   background-color: #eee4f0;
   color: #351d77;
   display: flex;
   justify-content: center;
   align-items:center;
   flex-flow: row wrap;
-  padding: 20px 0 50px 0;
+  padding-top: 20px;
 }
 .skills-used, .tools-used{
   display:flex;
@@ -287,8 +287,89 @@ header nav ul{
   justify-content: center;
   text-align: center;
 }
+.bubble-container{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin: auto;
+  aspect-ratio: 1 / 1;
+}
+.bubble{
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.7;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bubble-one{
+  width: 53%;
+  height: 30%;
+  background-color: #f4bedc;
+  top: 0;
+  left: 2%;
+  z-index: 2;
+
+}
+.bubble-two{
+  width: 37%;
+  height: 23%;
+  background-color: #d4d3e9;
+  top: 0%;
+  left: 49%;
+  z-index: 2;
+}
+.bubble-three{
+  width: 59%;
+  height: 36%;
+  background-color: #e8f0e4;
+  top: 17%;
+  left: 35%;
+  z-index: 2;
+}
+.bubble-four{
+  width: 37%;
+  height: 24%;
+  background-color: #f8d697;
+  top: 23%;
+  left: 4%;
+  z-index: 2;
+}
+.bubble-five{
+  width: 47%;
+  height: 30%;
+  background-color: #f4bedc;
+  top: 45%;
+  left: 52%;
+  z-index: 2;
+}
+.bubble-six{
+  width: 47%;
+  height: 30%;
+  background-color: #d4d3e9;
+  top: 42%;
+  left: 11%;
+  z-index: 2;
+}
+.bubble-seven{
+  width: 40%;
+  height: 24%;
+  background-color: #e8f0e4;
+  top: 64%;
+  left: 29%;
+  z-index: 2;
+}
+.bubble-eight{
+  width: 33%;
+  height: 19%;
+  background-color: #f8d697;
+  top: 71%;
+  left: 62%;
+  z-index: 2;
+}
 #skills h2 {
-  padding: 40px 0 20px 0;
+  padding: 40px 0 40px 0;
 }
 #skills ul li{
   padding-bottom: 20px;
@@ -592,6 +673,79 @@ header nav {
   list-style: square;
   list-style-position: inside;
 }
+.bubble-container{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+  aspect-ratio: 1 / 1;
+}
+.bubble-one{
+  width: 42%;
+  height: 38%;
+  background-color: #f4bedc;
+  top: 0;
+  left: 0%;
+  z-index: 2;
+
+}
+.bubble-two{
+  width: 30%;
+  height: 27%;
+  background-color: #d4d3e9;
+  top: 0%;
+  left: 38%;
+  z-index: 2;
+}
+.bubble-three{
+  width: 48%;
+  height: 42%;
+  background-color: #e8f0e4;
+  top: 14%;
+  left: 51%;
+  z-index: 2;
+}
+.bubble-four{
+  width: 31%;
+  height: 28%;
+  background-color: #f8d697;
+  top: 22%;
+  left: 25%;
+  z-index: 2;
+}
+.bubble-five{
+  width: 45%;
+  height: 38%;
+  background-color: #f4bedc;
+  top: 42%;
+  left: 21%;
+  z-index: 2;
+}
+.bubble-six{
+  width: 31%;
+  height: 30%;
+  background-color: #d4d3e9;
+  top: 32%;
+  left: 1%;
+  z-index: 2;
+}
+.bubble-seven{
+  width: 25%;
+  height: 24%;
+  background-color: #e8f0e4;
+  top: 59%;
+  left: 5%;
+  z-index: 2;
+}
+.bubble-eight{
+  width: 20%;
+  height: 19%;
+  background-color: #f8d697;
+  top: 50%;
+  left: 62%;
+  z-index: 2;
+}
 #about h2{
   text-align: center;
 }
@@ -663,6 +817,71 @@ header nav {
   }
 .skills-used, .tools-used{
   width: 100%;
+}
+.bubble-one{
+  width: 26%;
+  height: 44%;
+  background-color: #f4bedc;
+  top: 0;
+  left: 0%;
+  z-index: 2;
+
+}
+.bubble-two{
+  width: 19%;
+  height: 36%;
+  background-color: #d4d3e9;
+  top: 0%;
+  left: 23%;
+  z-index: 2;
+}
+.bubble-three{
+  width: 32%;
+  height: 53%;
+  background-color: #e8f0e4;
+  top: 6%;
+  left: 48%;
+  z-index: 2;
+}
+.bubble-four{
+  width: 15%;
+  height: 31%;
+  background-color: #f8d697;
+  top: 23%;
+  left: 30%;
+  z-index: 2;
+}
+.bubble-five{
+  width: 25%;
+  height: 51%;
+  background-color: #f4bedc;
+  top: 37%;
+  left: 37%;
+  z-index: 2;
+}
+.bubble-six{
+  width: 18%;
+  height: 34%;
+  background-color: #d4d3e9;
+  top: 44%;
+  left: 60%;
+  z-index: 2;
+}
+.bubble-seven{
+  width: 17%;
+  height: 36%;
+  background-color: #e8f0e4;
+  top: 27%;
+  left: 17%;
+  z-index: 2;
+}
+.bubble-eight{
+  width: 14%;
+  height: 31%;
+  background-color: #f8d697;
+  top: 30%;
+  left: 74%;
+  z-index: 2;
 }
 .my-about{
   display: flex;
