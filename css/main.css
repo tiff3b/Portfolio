@@ -185,7 +185,7 @@ header{
   background-image: url("../img/mandala.bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center fixed;
+  background-position: center;
   color: #351d77;
   display: flex;
   justify-content: center;
@@ -237,14 +237,15 @@ header nav ul{
 
 #projects {
   padding: 40px 0;
-  background-color: #351d77;
-  color:#eee4f0;
+  background-color: #e8f0e4;
+  color:#351d77;
   display: flex;
   justify-content: center;
 }
 #projects h2 {
   text-align: center;
   padding-bottom: 40px;
+  font-style: italic;
 }
 
 .completed-projects {
@@ -272,7 +273,7 @@ header nav ul{
 
 /*************SKILLS**************/
 
-#skills, #tools{
+#skills{
   background-color: #eee4f0;
   color: #351d77;
   display: flex;
@@ -286,15 +287,14 @@ header nav ul{
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-.bubble-container{
-  position: relative;
+    position: relative;
   width: 100%;
   height: 600px;
   overflow: hidden;
   margin: auto;
   aspect-ratio: 1 / 1;
 }
+
 .bubble{
   position: absolute;
   border-radius: 50%;
@@ -370,10 +370,41 @@ header nav ul{
 }
 #skills h2 {
   padding: 40px 0 40px 0;
+  font-style: italic;
 }
-#skills ul li{
-  padding-bottom: 20px;
-  list-style: none;
+
+.bubble-1{
+  width: 62%;
+  height: 34%;
+  background-color: #f4bedc;
+  top: 0;
+  left: 0%;
+  z-index: 2;
+
+}
+.bubble-2{
+  width: 44%;
+  height: 24%;
+  background-color: #d4d3e9;
+  top: 10%;
+  left: 51%;
+  z-index: 2;
+}
+.bubble-3{
+  width: 67%;
+  height: 34%;
+  background-color: #e8f0e4;
+  top: 26%;
+  left: 16%;
+  z-index: 2;
+}
+.bubble-4{
+  width: 52%;
+  height: 28%;
+  background-color: #f8d697;
+  top: 52%;
+  left: 25%;
+  z-index: 2;
 }
 
 /***************ABOUT**************/
@@ -384,11 +415,22 @@ header nav ul{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   padding: 50px 0 50px 0;
+}
+.my-about{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.all-about-me{
+  width: 100%;
 }
 #about h2{
   padding-bottom: 30px;
   text-align: center;
+  font-style: italic;
 }
 #about p {
   padding-bottom: 40px;
@@ -405,7 +447,11 @@ header nav ul{
   flex-flow: column wrap;
   padding: 50px 0 50px 0;
 }
-
+.contact-info{
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
 .my-info, .social{
   display: flex;
   text-align: center;
@@ -659,28 +705,11 @@ header nav {
   text-align: center;
   justify-content: space-around;
 }
-.skills-used ul, .tools-used ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
+
 .skills-tools h2, .tools-used h2 {
   padding: 40px 0 20px 0;
 }
-#skills ul li{
-  padding-right: 15px;
-  list-style: square;
-  list-style-position: inside;
-}
-.bubble-container{
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  margin: auto;
-  aspect-ratio: 1 / 1;
-}
+
 .bubble-one{
   width: 42%;
   height: 38%;
@@ -746,13 +775,61 @@ header nav {
   left: 62%;
   z-index: 2;
 }
+
+.bubble-1{
+  width: 54%;
+  height: 45%;
+  background-color: #f4bedc;
+  top: 0;
+  left: 0%;
+  z-index: 2;
+
+}
+.bubble-2{
+  width: 44%;
+  height: 35%;
+  background-color: #d4d3e9;
+  top: 10%;
+  left: 47%;
+  z-index: 2;
+}
+.bubble-3{
+  width: 55%;
+  height: 44%;
+  background-color: #e8f0e4;
+  top: 32%;
+  left: 18%;
+  z-index: 2;
+}
+.bubble-4{
+  width: 44%;
+  height: 36%;
+  background-color: #f8d697;
+  top: 55%;
+  left: 55%;
+  z-index: 2;
+}
+
 #about h2{
   text-align: center;
 }
+.my-about{
+  display: flex;
+  align-items: flex-start;
 
+}
+.all-about-me{
+  width: 50%;
+  padding-right: 25px;
+}
+
+.my-photo{
+  width: 50%;
+}
 .contact-info{
     display: flex;
     justify-content: center;
+    flex-flow: row nowrap;
   }
 
 .social-icons ul li{
@@ -771,8 +848,8 @@ header nav {
 .social-icons ul li{
   padding-right: 35px;
 }
-}
 
+}
 /*****************DESKTOP STYLES******************/
 
 @media only screen and (min-width: 1200px){
@@ -809,12 +886,7 @@ header nav {
     display: flex;
     flex-direction: column;
   }
-  #skills ul{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;  
-  }
+
 .skills-used, .tools-used{
   width: 100%;
 }
@@ -883,6 +955,40 @@ header nav {
   left: 74%;
   z-index: 2;
 }
+
+.bubble-1{
+  width: 32%;
+  height: 55%;
+  background-color: #f4bedc;
+  top: 0;
+  left: 12%;
+  z-index: 2;
+
+}
+.bubble-2{
+  width: 21%;
+  height: 35%;
+  background-color: #d4d3e9;
+  top: 10%;
+  left: 41%;
+  z-index: 2;
+}
+.bubble-3{
+  width: 32%;
+  height: 58%;
+  background-color: #e8f0e4;
+  top: 33%;
+  left: 28%;
+  z-index: 2;
+}
+.bubble-4{
+  width: 27%;
+  height: 53%;
+  background-color: #f8d697;
+  top: 21%;
+  left: 55%;
+  z-index: 2;
+}
 .my-about{
   display: flex;
   align-items: flex-start;
@@ -893,9 +999,10 @@ header nav {
   padding-left: 50px;
 }
 #about h2{
-  text-align: left;
+  text-align: center;
 }
 .my-photo{
   width: 50%;
 }
+
 }
