@@ -424,9 +424,7 @@ header nav ul{
   flex-flow: row wrap;
   justify-content: center;
 }
-.all-about-me{
-  width: 100%;
-}
+
 #about h2{
   padding-bottom: 30px;
   text-align: center;
