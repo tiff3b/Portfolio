@@ -88,7 +88,6 @@ textarea {
    ========================================================================== */
 
 /********************GENERAL STYLES********************/
-
 html {
   font-size: 1rem;
   margin: 0;
@@ -159,17 +158,16 @@ a {
   text-decoration: none;
 }
 
-button{
+.contact{
   background-color: #ec91c4;
   color:#351d77;
   font-family: "Nunito Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 25px;
-  height: 40px;
-  width: 95px;
+  padding: 11px 11px;
 }
-button:hover{
+.contact:hover{
   background-color: #f4bedc;
 }
 *{
@@ -198,7 +196,7 @@ header::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5); /* light transparent overlay */
+  background-color: rgba(255, 255, 255, 0.5); 
   z-index: -1;
 }
 
@@ -236,7 +234,7 @@ header nav ul{
 /************************PROJECTS*******************/
 
 #projects {
-  padding: 40px 0;
+  padding-top: 20px;
   background-color: #e8f0e4;
   color:#351d77;
   display: flex;
@@ -244,7 +242,7 @@ header nav ul{
 }
 #projects h2 {
   text-align: center;
-  padding-bottom: 40px;
+  padding: 20px 0 40px 0;
   font-style: italic;
 }
 
@@ -255,20 +253,23 @@ header nav ul{
   flex-flow: row wrap;
 }
 
-#projects a {
-  padding: 20px 0;
+#projects img {
+  padding-bottom: 40px;
 }
-
-#projects h3 {
-  padding: 40px 0 40px 0;
+.live-page h3 {
+  background-color: #f8d697;
+  border-radius: 25px;
   text-align: center;
+  padding: 15px 0;
 }
-
+#projects p {
+  padding-top: 40px;
+}
 .skills-tools {
   display: flex;
   justify-content: left;
   flex-flow: row wrap;
-  padding: 30px 0 40px 0;
+  padding: 10px 0 60px 0;
 }
 
 /*************SKILLS**************/
@@ -280,7 +281,7 @@ header nav ul{
   justify-content: center;
   align-items:center;
   flex-flow: row wrap;
-  padding-top: 20px;
+  padding: 40px 0;
 }
 .skills-used, .tools-used{
   display:flex;
@@ -416,7 +417,7 @@ header nav ul{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 0 50px 0;
+  padding: 40px 0;
 }
 .my-about{
   display: flex;
@@ -445,6 +446,10 @@ header nav ul{
   flex-flow: column wrap;
   padding: 50px 0 50px 0;
 }
+#contact h2{
+  padding-bottom: 50px;
+  text-align: center;
+}
 .contact-info{
   display: flex;
   justify-content: center;
@@ -457,17 +462,13 @@ header nav ul{
   flex-direction: column;
   flex-basis: 100%;
     border-top: 3px solid #351d77;
+}
 
-}
-#contact h2{
-  padding-bottom: 60px;
-  text-align: center;
-}
 .my-info, .social {
-  padding: 60px 0;
+  padding: 40px 0;
 }
-.contact-info h3, .social h3{
-  padding-bottom: 10px;
+.my-info h3, .social h3{
+  padding-bottom: 20px;
 }
 .contact-info h4{
   padding: 20px 0;
@@ -477,7 +478,7 @@ header nav ul{
 }
 .social ul li{
   list-style: none;
-  padding: 20px 0;
+  padding-top: 25px;
 }
 .copyright{
   padding-top: 20px;
