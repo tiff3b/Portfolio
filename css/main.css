@@ -267,22 +267,32 @@ header nav ul {
   padding-bottom: 40px;
 }
 
-.live-page h3 {
+.completed-projects h3 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.live-page {
   background-color: #f8d697;
   border-radius: 25px;
   text-align: center;
-  padding: 15px 0;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 10px auto 60px auto;
+  width: 60%;
 }
 
-#projects p {
-  padding-top: 40px;
-}
+
 
 .skills-tools {
   display: flex;
   justify-content: left;
   flex-flow: row wrap;
-  padding: 10px 0 60px 0;
+  padding: 50px 0 60px 0;
+
 }
 
 /*************SKILLS**************/
@@ -299,7 +309,7 @@ header nav ul {
 
 .skills-used p,
 .tools-used p {
-  background-color: #f8d697;
+  background-color: #d4d3e9;
   margin: 20px 0;
   padding: 15px 0;
   text-align: center;
@@ -609,11 +619,11 @@ header nav ul {
   .completed-projects {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
     flex-flow: row wrap;
   }
 
-  .completed-projects article {
+  .project-info {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
@@ -626,121 +636,16 @@ header nav ul {
     justify-content: space-around;
   }
 
-  .skills-tools h2,
-  .tools-used h2 {
-    padding: 40px 0 20px 0;
-  }
+.skills-used, .tools-used {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  
+}
 
-  .bubble-one {
-    width: 42%;
-    height: 38%;
-    background-color: #f4bedc;
-    top: 0;
-    left: 0%;
-    z-index: 2;
-
-  }
-
-  .bubble-two {
-    width: 30%;
-    height: 27%;
-    background-color: #d4d3e9;
-    top: 0%;
-    left: 38%;
-    z-index: 2;
-  }
-
-  .bubble-three {
-    width: 48%;
-    height: 42%;
-    background-color: #e8f0e4;
-    top: 14%;
-    left: 51%;
-    z-index: 2;
-  }
-
-  .bubble-four {
-    width: 31%;
-    height: 28%;
-    background-color: #f8d697;
-    top: 22%;
-    left: 25%;
-    z-index: 2;
-  }
-
-  .bubble-five {
-    width: 45%;
-    height: 38%;
-    background-color: #f4bedc;
-    top: 42%;
-    left: 21%;
-    z-index: 2;
-  }
-
-  .bubble-six {
-    width: 31%;
-    height: 30%;
-    background-color: #d4d3e9;
-    top: 32%;
-    left: 1%;
-    z-index: 2;
-  }
-
-  .bubble-seven {
-    width: 25%;
-    height: 24%;
-    background-color: #e8f0e4;
-    top: 59%;
-    left: 5%;
-    z-index: 2;
-  }
-
-  .bubble-eight {
-    width: 20%;
-    height: 19%;
-    background-color: #f8d697;
-    top: 50%;
-    left: 62%;
-    z-index: 2;
-  }
-
-  .bubble-1 {
-    width: 54%;
-    height: 45%;
-    background-color: #f4bedc;
-    top: 0;
-    left: 0%;
-    z-index: 2;
-
-  }
-
-  .bubble-2 {
-    width: 44%;
-    height: 35%;
-    background-color: #d4d3e9;
-    top: 10%;
-    left: 47%;
-    z-index: 2;
-  }
-
-  .bubble-3 {
-    width: 55%;
-    height: 44%;
-    background-color: #e8f0e4;
-    top: 32%;
-    left: 18%;
-    z-index: 2;
-  }
-
-  .bubble-4 {
-    width: 44%;
-    height: 36%;
-    background-color: #f8d697;
-    top: 55%;
-    left: 55%;
-    z-index: 2;
-  }
-
+.skill{
+  width: 40%;
+}
   #about h2 {
     text-align: center;
   }
